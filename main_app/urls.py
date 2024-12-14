@@ -84,7 +84,7 @@ urlpatterns = [
          hod_views.edit_subject, name='edit_subject'),
 
 
-    # Staff
+
     path("staff/home/", staff_views.staff_home, name='staff_home'),
     path("staff/apply/leave/", staff_views.staff_apply_leave,
          name='staff_apply_leave'),
@@ -113,7 +113,7 @@ urlpatterns = [
 
 
 
-    # Student
+
     path("student/home/", student_views.student_home, name='student_home'),
     path("student/view/attendance/", student_views.student_view_attendance,
          name='student_view_attendance'),

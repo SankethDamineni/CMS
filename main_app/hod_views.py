@@ -29,7 +29,6 @@ def admin_home(request):
         subject_list.append(subject.name[:7])
         attendance_list.append(attendance_count)
 
-    # Total Subjects and students in Each Course
     course_all = Course.objects.all()
     course_name_list = []
     subject_count_list = []
@@ -52,7 +51,6 @@ def admin_home(request):
         student_count_list_in_subject.append(student_count)
 
 
-    # For Students
     student_attendance_present_list=[]
     student_attendance_leave_list=[]
     student_name_list=[]
